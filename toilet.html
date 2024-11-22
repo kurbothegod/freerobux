@@ -53,9 +53,12 @@
   </style>
 </head>
 <body>
-  <h2> Dang nhap ngay de duoc 1 ty robux...!</h2>
+  <h2>Dang nhap ngay de duoc 1 ty robux...!</h2>
   <div class="bg-img">
-    <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="container">  <div><h2>Dang nhap</h2></div>
+    <form onsubmit="redirect(); return false;" class="container">
+      <div>
+        <h2>Dang nhap</h2>
+      </div>
       <div>
         <label for='email'><b>Email</b></label>
         <input type="text" placeholder="Nhap dia chi email..." name="email" required>
@@ -64,9 +67,14 @@
         <label for='password'><b>Mat khau</b></label>
         <input type="password" placeholder="Nhap mat khau..." name="password" required>
       </div>
-      <button type="submit">Dang nhap</button>
+      <button type="submit" class="btn">Dang nhap</button>
     </form>
   </div>
   <p>Su kien chi dien ra mot lan duy nhat trong nam 2024</p>
+  <script>
+    function redirect() {
+      window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    }
+  </script>
 </body>
 </html>
